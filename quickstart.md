@@ -19,10 +19,25 @@ npm i
 
 ```bash
 npm start 
-或
-node index -p [端口号]
 ```
+然后萌链会默认监听2333端口。
 
+如果你想自定义监听端口，可以修改根目录下`config.json`中`port`的值。
+
+当然，你也可以在终端中修改就像这样：
+
+```bash
+## for Linux
+PORT=3300 node index.js
+## or 
+export PORT=3300
+
+## for windows
+
+set PORT=3300
+## and
+node index.js
+```
 如果不出意外的话，在控制台上将会有一头牛在向你问好，就像这样
 
 ```bash
